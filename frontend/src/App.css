@@ -1,0 +1,83 @@
+:root {
+    --bg-body: #b7d9ea;
+    --fg-body: #354953;
+    --bg-primary: #4659d7;
+    --fg-primary: #15155c;
+    --bg-success: #6ad46a;
+    --fg-success: #165816;
+    --bg-danger: #c83c3c;
+    --fg-danger: #471010;
+}
+
+#root {
+    max-width: 1000px;
+    width: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-body);
+    color: var(--fg-body);
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.input:not(.check-input) {
+    padding: 0.3rem;
+    border: var(--fg-body) 1px solid;
+    border-radius: 0.3rem;
+    color: var(--fg-body);
+    background-color: #00000000;
+    outline: none !important;
+    flex-grow: 1;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.3rem;
+    border: none;
+}
+
+.btn.btn-primary {
+    background-color: var(--bg-primary);
+    color: var(--fg-primary);
+}
+
+.btn.btn-danger {
+    background-color: var(--bg-danger);
+    color: var(--fg-danger);
+}
+
+.task {
+    margin: 0.5rem 0rem;
+    font-size: larger;
+}
+
+.task-success {
+    text-decoration: line-through;
+    flex-grow: 1;
+    color: var(--fg-success);
+}
+
+.task-danger {
+    flex-grow: 1;
+    color: var(--fg-danger);
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.gap {
+    gap: 0.5rem;
+}
